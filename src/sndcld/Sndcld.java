@@ -3,13 +3,12 @@ package sndcld;
 import java.io.File;
 import java.io.IOException;
 
-import org.json.JSONException;
 import org.json.simple.parser.ParseException;
 
 public class Sndcld {
 	public static final File WRAPPER_SER = new File("wrapper.ser");
 
-	public static void main(String[] args) throws ClassNotFoundException, IOException, ParseException, JSONException {
+	public static void main(String[] args) throws ClassNotFoundException, IOException, ParseException {
 		if (args.length < 4) {
             System.err.println("CreateWrapper client_id client_secret login password");
             System.exit(1);

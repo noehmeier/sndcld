@@ -16,7 +16,6 @@ import main.java.com.soundcloud.api.Token;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
-import org.json.JSONException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -59,7 +58,7 @@ public class Wrapper {
 		return this.token;
 	}
 	
-	public void getRessource() throws IOException, ParseException, JSONException {
+	public void getRessource() throws IOException, ParseException {
 		String streamUrl = "https://api.soundcloud.com/tracks/150419500/stream";
 		final Request resource = Request.to("tracks/150419500/stream");
 		
